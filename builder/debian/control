@@ -1,0 +1,13 @@
+Source: drumee-infra
+Section: web
+Priority: optional
+Maintainer: Somanos Sar <somanos@drumee.com>
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.1.4
+Homepage: https://drumee.org/
+
+Package: drumee-infra
+Architecture: all
+Pre-Depends: build-essential, net-tools, g++, apt-utils, gpg, gnupg2, apt-transport-https, curl, software-properties-common, inotify-tools, wget, lsb-release, ca-certificates, dialog, bind9, bind9-dnsutils, bind9-doc, nginx, openssh-client, cron, default-jdk, graphicsmagick, libgraphicsmagick1-dev, poppler-utils, dcraw, p7zip-full, ffmpeg, redis-server, redis, node-redis, rsyslog, lua-dbi-sqlite3, gyp, libreoffice, libnginx-mod-stream, mysql-common
+Depends: ${misc:Depends}, debconf (>= 0.5) | debconf-2.0
+Description: Drumee Infrastructure Package. This Package is intended to preset all required dependencies and configure them to fit Drumee requirements.
